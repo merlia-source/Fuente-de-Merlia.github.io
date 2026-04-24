@@ -271,3 +271,13 @@ nav a:hover{
         height:300px;
     }
 }
+@media(max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .hero{
+        margin-top:140px;
+    }
+}
