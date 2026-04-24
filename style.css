@@ -216,18 +216,19 @@ nav a:hover{
     }
 }
 
-@media(max-width:768px){
-
-    body{
-        padding-top:90px; /* 🔥 ya no enorme */
-    }
+    @media(max-width:768px){
 
     .navbar{
-        padding:10px 15px;
-        flex-direction:row; /* 🔥 antes column */
-        flex-wrap:wrap;
-        gap:8px;
+        position:relative; /* 🔥 CLAVE */
+        flex-direction:column;
+        align-items:center;
     }
+
+    body{
+        padding-top:0; /* 🔥 quitamos el parche */
+    }
+
+}
 
     .logo{
         width:100%;
