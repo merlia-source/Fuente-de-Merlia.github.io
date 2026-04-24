@@ -15,7 +15,7 @@ body{
 .navbar{
     position:fixed;
     width:100%;
-    top:0;
+    top:-5;
     left:0;
     display:flex;
     justify-content:space-between;
@@ -198,7 +198,6 @@ nav a:hover{
     background:linear-gradient(to left, transparent, #F2ECE6);
 }
 
-/* ================= RESPONSIVE ================= */
 
 @media(max-width:1000px){
 
@@ -219,7 +218,7 @@ nav a:hover{
 @media(max-width:768px){
 
     body{
-        padding-top:120px; /* 🔥 navbar más grande en cel */
+        padding-top:110px;
     }
 
     .navbar{
