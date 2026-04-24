@@ -86,7 +86,7 @@ nav a:hover{
 .whatsapp-btn{
     background:#8B5E3C;
     color:white;
-    padding:10px 20px;
+    padding:10px 15px;
     border-radius:8px;
     text-decoration:none;
     font-weight:bold;
@@ -216,10 +216,10 @@ nav a:hover{
     }
 }
 
-@media(max-width:848px){
+@media(max-width:768px){
 
     body{
-        padding-top:110px; 
+        padding-top:100px; 
     }
 
     .navbar{
@@ -244,11 +244,11 @@ nav a:hover{
     }
 
     .hero-left h1{
-        font-size:25px;
+        font-size:20px;
     }
 
     .hero-left p{
-        font-size:12px;
+        font-size:10px;
     }
 
     .features{
