@@ -52,7 +52,7 @@ body{
 /* NAV */
 nav ul{
     display:flex;
-    gap:25px;
+    gap:20px;
     list-style:none;
 }
 
