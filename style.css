@@ -102,7 +102,7 @@ nav a:hover{
 .hero{
     display:flex;
     min-height:100vh;
-}
+    }
 
 /* TEXTO */
 .hero-left{
@@ -112,15 +112,18 @@ nav a:hover{
     flex-direction:column;
     justify-content:center;
     gap:15px;
+    
 }
 
 .hero-left h1{
     font-size:60px;
     line-height:1.05;
+     font-family: 'Playfair Display', serif; 
 }
 
 .hero-left span{
     color:#8B5E3C;
+     font-family: 'Playfair Display', serif;
 }
 
 .hero-left p{
@@ -175,12 +178,79 @@ nav a:hover{
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* IMAGEN */
+/* ===== HERO RIGHT ===== */
 .hero-right{
     width:60%;
     position:relative;
 }
 
+/* ===== DEGRADADO ===== */
+.hero-right::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        to left,
+        rgba(242,236,230,0) 40%,
+        rgba(242,236,230,0.9) 100%
+    );
+}
+
+/* ===== CAJA MISION ===== */
+.mission-box{
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    width:500px;
+
+    background:rgba(242,236,230,0.95);
+    backdrop-filter: blur(10px);
+
+    color:#2B2B2B;
+    padding:15px;
+    border-left:4px solid #8B5E3C;
+    border-radius:10px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    font-size:14px;
+    line-height:1.4;
+
+    z-index:2;
+}
+
+/* ===== BOTON MISION ===== */
+.btn-mission{
+    display:inline-block;
+    margin-top:10px;
+    background:#8B5E3C;
+    color:white;
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:13px;
+    transition:0.3s;
+    
+}
+
+.btn-mission:hover{
+    background:#5C4033;
+    transform:translateY(-2px);
+    align-items:center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .mission-box{
+        width:90%;
+        right:5%;
+        bottom:10px;
+        font-size:13px;
+    }
+}
 .hero-right img{
     width:100%;
     height:100%;
