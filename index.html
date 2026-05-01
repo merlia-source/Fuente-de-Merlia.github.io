@@ -1,343 +1,81 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlia - Diseño y Mobiliario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<body>
 
-body{
-    background:#F2ECE6;
-    color:#2B2B2B;
-    padding-top:80px;
-}
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Merlia">
 
-/* NAVBAR */
-.navbar{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 60px;
-    background:rgba(242,236,230,0.9);
-    backdrop-filter: blur(10px);
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    z-index:1000;
-}
+            <div class="logo-text">
+                <h2>Mobiliario de metal y madera</h2>
+                <span>GRUPO ML</span>
+            </div>
+        </div>
 
-/* LOGO */
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#">Cliente</a></li>
+            </ul>
+        </nav>
 
-.logo img{
-    width:80px;
-}
+        <a href="https://wa.me/5215577808245" class="whatsapp-btn">WhatsApp</a>
+    </header>
 
-.logo-text h2{
-    font-size:13px;
-    color:#6B6B6B;
-}
+    <!-- HERO -->
+    <section class="hero">
 
-.logo-text span{
-    color:#5C4033;
-    font-size:20px;
-    font-weight:bold;
-}
+        <div class="hero-left">
+            <h1>
+                ¡Impulsa tu negocio <br>
+                <span>y hazlo destacar!</span>
+            </h1>
 
-/* NAV */
-nav ul{
-    display:flex;
-    gap:15px;
-    list-style:none;
-}
+            <p>
+                Diseñamos, fabricamos y equipamos tu local con la mejor calidad.
+            </p>
 
-nav a{
-    text-decoration:none;
-    color:#2B2B2B;
-    position:relative;
-    transition:0.3s;
-}
+            <div class="features">
+                <div>Diseño Personalizado</div>
+                <div>Materiales de alta calidad</div>
+                <div>Fabricación Profesional</div>
+            </div>
 
-nav a::after{
-    content:"";
-    position:absolute;
-    bottom:-5px;
-    left:0;
-    width:0;
-    height:2px;
-    background:#8B5E3C;
-    transition:0.3s;
-}
+            <div class="buttons">
+                <a href="#" class="btn red">Ver catálogo</a>
+                <a href="#contacto" class="btn outline">Contáctanos</a>
+            </div>
+        </div>
 
-nav a:hover::after{
-    width:100%;
-}
+        <div class="hero-right">
+            <img src="tienda.png" alt="Diseño Merlia">
+        </div>
+        <div class="mission-box">
+            <p>
+                Nuestra misión es ofrecer de manera eficiente y ágil:
+                <br>
+                <strong>Mobiliario de exhibición en madera y metal con acabados de alta calidad.</strong>
+            </p>
 
-nav a:hover{
-    color:#8B5E3C;
-}
+            <a href="#" class="btn-mission">Cotiza tu proyecto</a>
+        </div>
+    </div>
 
-/* BOTON WHATS */
-.whatsapp-btn{
-    background:#8B5E3C;
-    color:white;
-    padding:10px 10px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
+</section>
 
-.whatsapp-btn:hover{
-    background:#5C4033;
-    transform:translateY(-2px);
-}
+    </section>
 
-/* HERO */
-.hero{
-    display:flex;
-    min-height:100vh;
-    }
-
-/* TEXTO */
-.hero-left{
-    width:40%;
-    padding:50px 60px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:15px;
-    
-}
-
-.hero-left h1{
-    font-size:60px;
-    line-height:1.05;
-     font-family: 'Playfair Display', serif; 
-}
-
-.hero-left span{
-    color:#8B5E3C;
-     font-family: 'Playfair Display', serif;
-}
-
-.hero-left p{
-    color:#6B6B6B;
-}
-
-/* FEATURES */
-.features{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-}
-
-.features div{
-    border:1px solid #A67C52;
-    padding:8px 14px;
-    border-radius:8px;
-    font-size:13px;
-    transition:0.3s;
-}
-
-.features div:hover{
-    background:#8B5E3C;
-    color:white;
-}
-
-/* BOTONES */
-.buttons{
-    display:flex;
-    gap:15px;
-    margin-top:10px;
-}
-
-.btn{
-    padding:12px 22px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.red,
-.outline{
-    background:#8B5E3C;
-    color:white;
-}
-
-.red:hover,
-.outline:hover{
-    background:#5C4033;
-    transform:translateY(-3px);
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* ===== HERO RIGHT ===== */
-.hero-right{
-    width:60%;
-    position:relative;
-}
-
-/* ===== DEGRADADO ===== */
-.hero-right::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-
-    background:linear-gradient(
-        to left,
-        rgba(242,236,230,0) 40%,
-        rgba(242,236,230,0.9) 100%
-    );
-}
-
-/* ===== CAJA MISION ===== */
-.mission-box{
-    position:absolute;
-    bottom:30px;
-    right:30px;
-    width:500px;
-
-    background:rgba(242,236,230,0.95);
-    backdrop-filter: blur(10px);
-
-    color:#2B2B2B;
-    padding:15px;
-    border-left:4px solid #8B5E3C;
-    border-radius:10px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
-    font-size:14px;
-    line-height:1.4;
-
-    z-index:2;
-}
-
-/* ===== BOTON MISION ===== */
-.btn-mission{
-    display:inline-block;
-    margin-top:10px;
-    background:#8B5E3C;
-    color:white;
-    padding:10px 15px;
-    border-radius:6px;
-    text-decoration:none;
-    font-size:13px;
-    transition:0.3s;
-    
-}
-
-.btn-mission:hover{
-    background:#5C4033;
-    transform:translateY(-2px);
-    align-items:center;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px){
-    .mission-box{
-        width:90%;
-        right:5%;
-        bottom:10px;
-        font-size:13px;
-    }
-}
-.hero-right img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* DEGRADADO */
-.hero-right::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:linear-gradient(to left, transparent, #F2ECE6);
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:1000px){
-
-    .hero{
-        flex-direction:column;
-    }
-
-    .hero-left,
-    .hero-right{
-        width:100%;
-    }
-
-    .hero-right img{
-        height:400px;
-    }
-}
-
-@media(max-width:768px){
-
-    /* 🔥 CLAVE: espacio suficiente para navbar */
-    body{
-        padding-top:180px;
-    }
-
-    .navbar{
-        padding:10px 15px;
-        flex-direction:column;
-        gap:5px;
-    }
-
-    nav ul{
-        gap:10px;
-        flex-wrap:wrap;
-        justify-content:center;
-        font-size:14px;
-    }
-
-    .logo img{
-        width:50px;
-    }
-
-    .whatsapp-btn{
-        padding:6px 12px;
-        font-size:13px;
-    }
-
-    .hero-left{
-        padding:30px 20px;
-        text-align:center;
-    }
-
-    .hero-left h1{
-        font-size:26px;
-    }
-
-    .hero-left p{
-        font-size:14px;
-    }
-
-    .features{
-        justify-content:center;
-    }
-
-    .buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .hero-right img{
-        height:300px;
-    }
-}
+</body>
+</html>
