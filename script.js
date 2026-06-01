@@ -1,4 +1,4 @@
-const URL_SCRIPT = "https://script.google.com/macros/s/AKfycbzm08stHKm7x0pYxFDU7dFlunD6irbrQR0lr6B7VFALPIoF4rSDDo-xMRB6iK12dp-lYw/exec";
+const URL_SCRIPT = "https://script.google.com/macros/s/AKfycbxCOxyEgdDsMh4ul_6yuGIGi-IirM43KF3DC857CSf8_FFg1Qqb0nRyqMqNhI7B0UFdqw/exec";
 
 document.getElementById("cuestionario")
 .addEventListener("submit", function(e){
