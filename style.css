@@ -1,0 +1,812 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#F2ECE6;
+    color:#2B2B2B;
+    padding-top:90px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 60px;
+    background:rgba(242,236,230,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    z-index:1000;
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:80px;
+}
+
+.logo-text h2{
+    font-size:13px;
+    color:#6B6B6B;
+    font-weight:400;
+}
+
+.logo-text span{
+    color:#5C4033;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* NAV */
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2B2B2B;
+    position:relative;
+    transition:.3s;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0;
+    height:2px;
+    background:#8B5E3C;
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#8B5E3C;
+}
+
+/* BOTON WHATSAPP */
+.whatsapp-btn{
+    background:#8B5E3C;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#5C4033;
+    transform:translateY(-2px);
+}
+
+/* ================= HERO ================= */
+.hero{
+    display:flex;
+    min-height:100vh;
+}
+
+/* TEXTO */
+.hero-left{
+    width:40%;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-left h1{
+    font-size:50px;
+    line-height:1.1;
+    font-family:'Playfair Display', serif;
+}
+
+.hero-left span{
+    color:#8B5E3C;
+}
+
+.hero-left p{
+    color:#6B6B6B;
+    font-size:16px;
+}
+
+/* FEATURES */
+.features{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.features div{
+    border:1px solid #A67C52;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    transition:.3s;
+}
+
+.features div:hover{
+    background:#8B5E3C;
+    color:white;
+}
+
+/* BOTONES */
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.btn{
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.red,
+.outline{
+    background:#8B5E3C;
+    color:white;
+}
+
+.red:hover,
+.outline:hover{
+    background:#5C4033;
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* HERO RIGHT */
+.hero-right{
+    width:60%;
+    position:relative;
+}
+
+.hero-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* DEGRADADO */
+.hero-right::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        to left,
+        rgba(242,236,230,0) 40%,
+        rgba(242,236,230,1) 100%
+    );
+}
+
+/* MISSION BOX */
+.mission-box{
+    position:absolute;
+    bottom:100px;
+    right:10px;
+    width:420px;
+    background:rgba(242,236,230,0.95);
+    backdrop-filter:blur(10px);
+    color:#2B2B2B;
+    padding:20px;
+    border-left:4px solid #8B5E3C;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    font-size:14px;
+    line-height:1;
+    z-index:2;
+}
+
+.btn-mission{
+    display:inline-block;
+    margin-top:10px;
+    background:#8B5E3C;
+    color:white;
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:13px;
+    transition:.3s;
+}
+
+.btn-mission:hover{
+    background:#5C4033;
+    transform:translateY(-2px);
+}
+
+/* ================= SECCION CANVA ================= */
+
+.seccion-canva{
+    display:flex;
+    width:100%;
+    padding:40px;
+    gap:30px;
+    align-items:center;
+}
+
+/* IZQUIERDA */
+
+.canva-left{
+    width:30%;
+    padding:20px;
+    background:#F2ECE6;
+}
+
+.canva-left h1{
+    font-family:'Playfair Display', serif;
+    color:#704d2e;
+    font-size:38px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.canva-left p{
+    color:#6B6B6B;
+    margin-bottom:40px;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* LISTA */
+
+.lista{
+    list-style:none;
+}
+
+.lista li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:18px;
+    color:#6B6B6B;
+    font-size:15px;
+    transition:.3s;
+}
+
+.lista li:hover{
+    transform:translateX(5px);
+}
+
+.lista img{
+    width:35px;
+}
+
+/* DERECHA */
+
+.canva-right{
+    width:70%;
+    padding:25px;
+    border-radius:25px;
+    background:linear-gradient(to right,#5a3d28,#704d2e,#8b5e3c);
+}
+
+/* GALERIA */
+
+.galeria-canva{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    width:100%;
+}
+
+/* IMAGENES */
+
+.galeria-canva img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+/* HOVER */
+
+.galeria-canva img:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* TEXTO */
+
+.texto-horizontal{
+    grid-column:1 / 3;
+    text-align:center;
+    color:#F2ECE6;
+    font-size:20px;
+    letter-spacing:2px;
+    padding:5px 0;
+    font-weight:500;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .hero{
+        flex-direction:column;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-right img{
+        height:400px;
+    }
+}
+
+@media(max-width:900px){
+
+    .seccion-canva{
+        flex-direction:column;
+        padding:25px;
+    }
+
+    .canva-left,
+    .canva-right{
+        width:100%;
+    }
+
+    .canva-left{
+        text-align:center;
+    }
+
+    .galeria-canva{
+        grid-template-columns:1fr;
+    }
+
+    .texto-horizontal{
+        grid-column:auto;
+        font-size:16px;
+    }
+
+    .galeria-canva img{
+        height:200px;
+    }
+}
+
+@media(max-width:768px){
+
+    body{
+        padding-top:170px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-left{
+        padding:35px 20px;
+        text-align:center;
+    }
+
+    .hero-left h1{
+        font-size:38px;
+    }
+
+    .features{
+        justify-content:center;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .mission-box{
+        width:90%;
+        right:5%;
+        bottom:20px;
+    }
+}
+/* ===== TABLA VENTAJAS ===== */
+
+.tabla-ventajas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:60px;
+    width:100%;
+}
+
+/* ===== CARDS ===== */
+
+.card-tabla{
+    background:#8b5e3c;
+    padding:35px 25px;
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:.35s;
+}
+
+/* HOVER */
+
+.card-tabla:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+/* TITULOS */
+
+.card-tabla h3{
+    color:#F2ECE6;
+    margin-bottom:20px;
+    font-size:28px;
+    font-family:'Playfair Display', serif;
+}
+
+/* ICONOS */
+
+.card-tabla img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+/* EFECTO ICONO */
+
+.card-tabla:hover img{
+    transform:scale(1.08);
+}
+
+/* TEXTO */
+
+.card-tabla p{
+    color:#f2ece6e0;
+    line-height:1.7;
+    font-size:15px;
+    max-width:250px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+    .tabla-ventajas{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+    }
+
+    .card-tabla{
+        padding:30px 20px;
+    }
+
+    .card-tabla h3{
+        font-size:24px;
+    }
+
+    .card-tabla img{
+        width:75px;
+        height:75px;
+    }
+}
+/* ===== SECCION PROYECTOS ===== */
+
+.proyecto{
+    width:100%;
+    padding:50px 40px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    background:#F2ECE6;
+}
+
+/* IZQUIERDA Y DERECHA */
+
+.proyecto-left,
+.proyecto-right{
+    width:auto;
+    text-align:center;
+}
+
+/* TITULOS */
+
+.proyecto h1{
+    font-size:55px;
+    color:#000;
+    font-family:'Playfair Display', serif;
+    line-height:1;
+}
+
+/* TEXTO */
+
+.proyecto p{
+    font-size:32px;
+    color:#A67C52;
+    font-family:'Playfair Display', serif;
+    margin-top:5px;
+    line-height:1.1;
+}
+
+/* LINEA */
+
+.linea-centro{
+    width:2px;
+    height:90px;
+
+    background:linear-gradient(
+        to bottom,
+        #000,
+        #8B5E3C
+    );
+
+    border-radius:10px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .proyecto{
+        flex-direction:column;
+        gap:15px;
+        padding:40px 20px;
+    }
+
+    .proyecto h1{
+        font-size:38px;
+    }
+
+    .proyecto p{
+        font-size:22px;
+    }
+
+    .linea-centro{
+        width:90px;
+        height:2px;
+
+        background:linear-gradient(
+            to right,
+            #000,
+            #8B5E3C
+        );
+    }
+}
+/* ================= COLLAGE ================= */
+
+.collage-section{
+    width:100%;
+    padding:0 40px 60px;
+    background:#F2ECE6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CONTENEDOR */
+
+.collage{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+/* IMAGEN */
+
+.collage img{
+    width:90%;
+    max-width:1350px;
+    border-radius:25px;
+    object-fit:cover;
+    display:block;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    transition:.4s ease;
+}
+
+/* HOVER */
+
+.collage img:hover{
+    transform:scale(1.01);
+}
+
+/* ================= CONTACTANOS ================= */
+
+.contactanos-section{
+    width:100%;
+    padding:0px 10px 50px;
+    background:#F2ECE6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CONTENEDOR */
+
+.contactanoslol{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* BOTON */
+
+.contactanos-btn{
+    text-decoration:none;
+
+    background:#8B5E3C;
+    color:#F2ECE6;
+    padding:20px 50px;
+
+    border-radius:18px;
+
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* HOVER */
+
+.contactanos-btn:hover{
+    background:#5C4033;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .collage-section{
+        padding:0 15px 40px;
+    }
+
+    .collage img{
+        border-radius:18px;
+    }
+
+    .contactanos-section{
+        padding:10px 15px 60px;
+    }
+
+    .contactanos-btn{
+        width:100%;
+        text-align:center;
+
+        padding:18px 20px;
+
+        font-size:18px;
+        border-radius:15px;
+    }
+}
+/* ===== FOOTER ===== */
+
+.footer{
+    width:100%;
+
+    background:#6f4b32;
+
+    padding:60px 70px;
+
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+
+    gap:50px;
+
+    color:#F2ECE6;
+}
+
+/* CAJAS */
+
+.footer-box{
+    display:flex;
+    flex-direction:column;
+}
+
+/* LOGO */
+
+.footer-empresa img{
+    width:120px;
+    margin-bottom:15px;
+    
+}
+
+
+
+.footer-empresa p{
+    line-height:1.5;
+    color:#f2ece6da;
+    max-width:350px;
+    
+}
+
+/* TITULOS */
+
+.footer-box h3{
+    font-size:24px;
+    margin-bottom:20px;
+    font-family:'Playfair Display', serif;
+}
+
+/* TEXTOS */
+
+.footer-box p{
+    margin-bottom:12px;
+    color:#f2ece6da;
+    line-height:1.7;
+    transition:.3s;
+}
+
+/* EFECTO */
+
+.footer-box p:hover{
+    transform:translateX(5px);
+    color:#fff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .footer{
+        grid-template-columns:1fr;
+        padding:50px 30px;
+        gap:40px;
+        text-align:center;
+    }
+
+    .footer-box{
+        align-items:center;
+    }
+
+    .footer-empresa p{
+        max-width:100%;
+    }
+}
+html{
+    scroll-behavior:smooth;
+}
