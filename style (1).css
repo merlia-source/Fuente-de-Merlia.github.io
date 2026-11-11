@@ -1,0 +1,337 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#FFF8FA;
+color:#444;
+}
+
+/* PORTADA */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+position:relative;
+overflow:hidden;
+background:#fedde4;
+}
+
+.contenido{
+width:50%;
+animation:aparece 1.2s ease;
+}
+
+.contenido h3{
+color:#f05688;
+font-size:22px;
+font-family:'Great Vibes',cursive;
+}
+
+.contenido h1{
+font-size:65px;
+line-height:65px;
+color:#f05688;
+margin:20px 0;
+font-weight:800;
+}
+
+.contenido p{
+font-size:20px;
+color:#f35588;
+}
+
+.imagen{
+width:45%;
+animation:flotar 6s infinite ease-in-out;
+}
+
+.imagen img{
+width:100%;
+}
+
+/* CIRCULOS */
+.circulo{
+position:absolute;
+border-radius:50%;
+opacity:.25;
+animation:flotar 12s infinite ease-in-out;
+}
+
+.c1{
+width:300px;
+height:300px;
+background:#75575f;
+top:-120px;
+left:-120px;
+}
+
+.c2{
+width:180px;
+height:180px;
+background:#c25959;
+right:580px;
+bottom:80px;
+}
+
+.c3{
+width:120px;
+height:120px;
+background:#5a85bb;
+top:150px;
+right:-40px;
+}
+
+/* FLECHA */
+.flecha{
+position:absolute;
+bottom:20px;
+left:50%;
+font-size:40px;
+animation:sube 1s infinite;
+}
+
+/* INFO */
+.info{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+padding:80px 10%;
+background:#fcefee;
+animation:aparece 1.2s ease;
+}
+
+.info img{
+width:450px;
+}
+
+.texto{
+max-width:550px;
+}
+
+.texto h2{
+font-size:40px;
+color:#f35588;
+margin-bottom:20px;
+text-align: center;
+}
+
+.texto p{
+font-size:18px;
+line-height:30px;
+margin-bottom:20px;
+text-align: justify;
+color:#444;
+}
+
+/* PASOS */
+.pasos{
+padding:80px 10%;
+background:#fedde4;
+animation:aparece 1.2s ease;
+}
+
+.pasos h2{
+text-align:center;
+font-size:40px;
+margin-bottom:10px;
+color:#f35588;
+}
+.pasos p{
+font-size:18px;
+line-height:30px;
+margin-bottom:20px;
+text-align: justify;
+}
+
+
+.contenedor-pasos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+color:#f35588;
+}
+.contenedor-pasos p{
+color: #444;
+}
+.card ul{
+list-style: none;
+padding-left: 0;
+margin: 0;
+}
+.paso{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:0.3s;
+}
+
+.paso:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* BENEFICIOS */
+.beneficios{
+display:flex;
+gap:40px;
+padding:90px 10%;
+background:#fcefee;
+animation:aparece 1.2s ease;
+}
+
+.card{
+flex:1;
+background:white;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+height:200px;
+margin-bottom:20px;
+}
+
+.card h2{
+color:#f35588;
+margin-bottom:20px;
+}
+
+/* FINAL */
+.final{
+margin:80px auto;
+width:80%;
+background:#f05688;
+padding:60px;
+border-radius:30px;
+text-align:center;
+color:white;
+animation:aparece 1.2s ease;
+}
+
+.final h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.final p{
+font-size:20px;
+line-height:30px;
+}
+
+/* ANIMACIONES */
+@keyframes aparece{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes flotar{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes sube{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+/* ================= RESPONSIVE CELULAR ================= */
+@media (max-width: 768px) {
+
+/* HERO */
+.hero{
+flex-direction:column;
+text-align:center;
+height:auto;
+padding:40px 20px;
+}
+
+.contenido{
+width:100%;
+}
+
+.contenido h1{
+font-size:38px;
+line-height:42px;
+}
+
+.contenido p{
+font-size:16px;
+}
+
+.imagen{
+width:80%;
+margin-top:30px;
+}
+
+/* INFO */
+.info{
+flex-direction:column;
+text-align:center;
+padding:50px 20px;
+}
+
+.info img{
+width:90%;
+}
+
+.texto h2{
+font-size:30px;
+}
+
+.texto p{
+font-size:16px;
+line-height:26px;
+}
+
+/* PASOS */
+.contenedor-pasos{
+grid-template-columns:1fr;
+}
+
+/* BENEFICIOS */
+.beneficios{
+flex-direction:column;
+padding:50px 20px;
+}
+
+/* FINAL */
+.final{
+width:90%;
+padding:40px 20px;
+}
+
+.final h2{
+font-size:28px;
+}
+
+.final p{
+font-size:16px;
+}
+
+/* CIRCULOS (menos estorbo en cel) */
+.c1, .c2, .c3{
+opacity:0.1;
+}
+
+}
